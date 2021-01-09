@@ -8,7 +8,7 @@ const squareWidth = (Dimensions.get('window').width * 0.95) / 8;
 
 const Square = ({ square: { bgColor, piece, id }, movePiece }) => {
   return (
-    <StyledSquare bgColor={bgColor} onPress={() => movePiece(id, 'a3', piece)}>
+    <StyledSquare bgColor={bgColor} onPress={() => movePiece(id, piece)}>
       {/* <Text style={{ color: 'red' }}>{id}</Text> */}
       {piece ? <StyledImage source={getSquareImage(piece)} /> : null}
     </StyledSquare>
